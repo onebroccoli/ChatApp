@@ -128,7 +128,7 @@ class LoginViewController: UIViewController {
     private func updateUIfor(login: Bool) {
         
         loginButtonOutlet.setTitle(login ? "Login" : "Register", for: .normal);
-//      
+//
         
         signUpButtonOutlet.setTitle(login ? "Signup" : "Login", for: .normal)
         

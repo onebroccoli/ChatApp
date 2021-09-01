@@ -15,6 +15,8 @@
 		EC46B0F026DD621D00560EBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC46B0EE26DD621D00560EBD /* LaunchScreen.storyboard */; };
 		EC46B13D26DD8EA900560EBD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC46B13C26DD8EA900560EBD /* GoogleService-Info.plist */; };
 		EC46B14226DDF5AF00560EBD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46B14126DDF5AF00560EBD /* LoginViewController.swift */; };
+		EC46B15026DF634D00560EBD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46B14F26DF634C00560EBD /* User.swift */; };
+		EC46B17626DF671300560EBD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46B17526DF671300560EBD /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		EC46B0F126DD621D00560EBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC46B13C26DD8EA900560EBD /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		EC46B14126DDF5AF00560EBD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EC46B14F26DF634C00560EBD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = "../New Group/User.swift"; sourceTree = "<group>"; };
+		EC46B17526DF671300560EBD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,8 @@
 		EC46B0E226DD621A00560EBD /* ChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				EC46B17526DF671300560EBD /* Constants.swift */,
+				EC46B15226DF635D00560EBD /* Model */,
 				EC46B0E326DD621A00560EBD /* AppDelegate.swift */,
 				EC46B0E526DD621A00560EBD /* SceneDelegate.swift */,
 				EC46B14126DDF5AF00560EBD /* LoginViewController.swift */,
@@ -92,6 +98,14 @@
 				EC46B0F126DD621D00560EBD /* Info.plist */,
 			);
 			path = ChatApp;
+			sourceTree = "<group>";
+		};
+		EC46B15226DF635D00560EBD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC46B14F26DF634C00560EBD /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +223,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC46B17626DF671300560EBD /* Constants.swift in Sources */,
+				EC46B15026DF634D00560EBD /* User.swift in Sources */,
 				EC46B14226DDF5AF00560EBD /* LoginViewController.swift in Sources */,
 				EC46B0E426DD621A00560EBD /* AppDelegate.swift in Sources */,
 				EC46B0E626DD621A00560EBD /* SceneDelegate.swift in Sources */,
