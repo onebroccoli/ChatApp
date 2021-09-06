@@ -17,6 +17,8 @@
 		EC46B14226DDF5AF00560EBD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46B14126DDF5AF00560EBD /* LoginViewController.swift */; };
 		EC46B15026DF634D00560EBD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46B14F26DF634C00560EBD /* User.swift */; };
 		EC46B17626DF671300560EBD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46B17526DF671300560EBD /* Constants.swift */; };
+		ECA0EFAA26DFEC120011B1D4 /* FCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0EFA926DFEC120011B1D4 /* FCollectionReference.swift */; };
+		ECA0EFCF26DFED280011B1D4 /* FirebaseUserListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0EFCE26DFED270011B1D4 /* FirebaseUserListener.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		EC46B14126DDF5AF00560EBD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EC46B14F26DF634C00560EBD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = "../New Group/User.swift"; sourceTree = "<group>"; };
 		EC46B17526DF671300560EBD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ECA0EFA926DFEC120011B1D4 /* FCollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCollectionReference.swift; sourceTree = "<group>"; };
+		ECA0EFCE26DFED270011B1D4 /* FirebaseUserListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUserListener.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				EC46B17526DF671300560EBD /* Constants.swift */,
+				ECA0EFCD26DFECF70011B1D4 /* FirebaseHelpers */,
 				EC46B15226DF635D00560EBD /* Model */,
 				EC46B0E326DD621A00560EBD /* AppDelegate.swift */,
 				EC46B0E526DD621A00560EBD /* SceneDelegate.swift */,
@@ -106,6 +111,15 @@
 				EC46B14F26DF634C00560EBD /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		ECA0EFCD26DFECF70011B1D4 /* FirebaseHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				ECA0EFA926DFEC120011B1D4 /* FCollectionReference.swift */,
+				ECA0EFCE26DFED270011B1D4 /* FirebaseUserListener.swift */,
+			);
+			path = FirebaseHelpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,10 +237,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECA0EFAA26DFEC120011B1D4 /* FCollectionReference.swift in Sources */,
 				EC46B17626DF671300560EBD /* Constants.swift in Sources */,
 				EC46B15026DF634D00560EBD /* User.swift in Sources */,
 				EC46B14226DDF5AF00560EBD /* LoginViewController.swift in Sources */,
 				EC46B0E426DD621A00560EBD /* AppDelegate.swift in Sources */,
+				ECA0EFCF26DFED280011B1D4 /* FirebaseUserListener.swift in Sources */,
 				EC46B0E626DD621A00560EBD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
