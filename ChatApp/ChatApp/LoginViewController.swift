@@ -202,6 +202,7 @@ class LoginViewController: UIViewController {
                     self.resendEmailButtonOutlet.isHidden = false
                 } else {
                     ProgressHUD.showFailed(error!.localizedDescription)
+                    print(error!.localizedDescription)
                 }
             }
         } else {
@@ -233,9 +234,35 @@ class LoginViewController: UIViewController {
         }
     }
     
+//    private func resetPassword(){
+//        FirebaseUserListener.shared.resetPasswordFor(email: emailTextField.text!) { (error) in
+//
+//            if error == nil {
+//                ProgressHUD.showSuccess("Reset link sent to email.")
+//
+//            } else {
+//                ProgressHUD.showFailed(error!.localizedDescription)
+//            }
+//        }
+//
+//    }
+    
+//    private func resendVerificationEmail() {
+//        FirebaseUserListener.shared.resendVerificationEmail(email: emailTextField.text!) { (error) in
+//            if error == nil {
+//                ProgressHUD.showSuccess("New verification email sent")
+//            } else {
+//                ProgressHUD.showFailed(error!.localizedDescription)
+//            }
+//        }
+//    }
+    
     // MARK: -Navigation
     private func goToApp(){
-        print("go to app")
+        let mainView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "MainView") as! UITabBarController
+        
+        mainView.modalPresentationStyle = .fullScreen
+        self.present(mainView, animated: true, completion: nil)
     }
     
 //    print("user has logged in with email", User.currentUser?.email)
