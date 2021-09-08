@@ -93,6 +93,7 @@
 				EC46B17526DF671300560EBD /* Constants.swift */,
 				ECA0EFCD26DFECF70011B1D4 /* FirebaseHelpers */,
 				EC46B15226DF635D00560EBD /* Model */,
+				ECA0F03526E826180011B1D4 /* Helpers */,
 				EC46B0E326DD621A00560EBD /* AppDelegate.swift */,
 				EC46B0E526DD621A00560EBD /* SceneDelegate.swift */,
 				EC46B14126DDF5AF00560EBD /* LoginViewController.swift */,
@@ -120,6 +121,13 @@
 				ECA0EFCE26DFED270011B1D4 /* FirebaseUserListener.swift */,
 			);
 			path = FirebaseHelpers;
+			sourceTree = "<group>";
+		};
+		ECA0F03526E826180011B1D4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
