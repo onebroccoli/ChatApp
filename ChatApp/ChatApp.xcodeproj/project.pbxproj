@@ -19,6 +19,8 @@
 		EC46B17626DF671300560EBD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46B17526DF671300560EBD /* Constants.swift */; };
 		ECA0EFAA26DFEC120011B1D4 /* FCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0EFA926DFEC120011B1D4 /* FCollectionReference.swift */; };
 		ECA0EFCF26DFED280011B1D4 /* FirebaseUserListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0EFCE26DFED270011B1D4 /* FirebaseUserListener.swift */; };
+		ECA0F03826E93F780011B1D4 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0F03726E93F780011B1D4 /* SettingsTableViewController.swift */; };
+		ECA0F03B26EA7ED20011B1D4 /* EditProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0F03A26EA7ED20011B1D4 /* EditProfileTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		EC46B17526DF671300560EBD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		ECA0EFA926DFEC120011B1D4 /* FCollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCollectionReference.swift; sourceTree = "<group>"; };
 		ECA0EFCE26DFED270011B1D4 /* FirebaseUserListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUserListener.swift; sourceTree = "<group>"; };
+		ECA0F03726E93F780011B1D4 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		ECA0F03A26EA7ED20011B1D4 /* EditProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 				EC46B0E326DD621A00560EBD /* AppDelegate.swift */,
 				EC46B0E526DD621A00560EBD /* SceneDelegate.swift */,
 				EC46B14126DDF5AF00560EBD /* LoginViewController.swift */,
+				ECA0F03726E93F780011B1D4 /* SettingsTableViewController.swift */,
+				ECA0F03A26EA7ED20011B1D4 /* EditProfileTableViewController.swift */,
 				EC46B0E926DD621A00560EBD /* Main.storyboard */,
 				EC46B0EC26DD621D00560EBD /* Assets.xcassets */,
 				EC46B0EE26DD621D00560EBD /* LaunchScreen.storyboard */,
@@ -249,6 +255,8 @@
 				EC46B17626DF671300560EBD /* Constants.swift in Sources */,
 				EC46B15026DF634D00560EBD /* User.swift in Sources */,
 				EC46B14226DDF5AF00560EBD /* LoginViewController.swift in Sources */,
+				ECA0F03826E93F780011B1D4 /* SettingsTableViewController.swift in Sources */,
+				ECA0F03B26EA7ED20011B1D4 /* EditProfileTableViewController.swift in Sources */,
 				EC46B0E426DD621A00560EBD /* AppDelegate.swift in Sources */,
 				ECA0EFCF26DFED280011B1D4 /* FirebaseUserListener.swift in Sources */,
 				EC46B0E626DD621A00560EBD /* SceneDelegate.swift in Sources */,
