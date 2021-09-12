@@ -21,6 +21,7 @@
 		ECA0EFCF26DFED280011B1D4 /* FirebaseUserListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0EFCE26DFED270011B1D4 /* FirebaseUserListener.swift */; };
 		ECA0F03826E93F780011B1D4 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0F03726E93F780011B1D4 /* SettingsTableViewController.swift */; };
 		ECA0F03B26EA7ED20011B1D4 /* EditProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0F03A26EA7ED20011B1D4 /* EditProfileTableViewController.swift */; };
+		ECA0F03E26EAD2190011B1D4 /* FireStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0F03D26EAD2190011B1D4 /* FireStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		ECA0EFCE26DFED270011B1D4 /* FirebaseUserListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUserListener.swift; sourceTree = "<group>"; };
 		ECA0F03726E93F780011B1D4 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		ECA0F03A26EA7ED20011B1D4 /* EditProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewController.swift; sourceTree = "<group>"; };
+		ECA0F03D26EAD2190011B1D4 /* FireStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 			children = (
 				ECA0EFA926DFEC120011B1D4 /* FCollectionReference.swift */,
 				ECA0EFCE26DFED270011B1D4 /* FirebaseUserListener.swift */,
+				ECA0F03D26EAD2190011B1D4 /* FireStorage.swift */,
 			);
 			path = FirebaseHelpers;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECA0EFAA26DFEC120011B1D4 /* FCollectionReference.swift in Sources */,
+				ECA0F03E26EAD2190011B1D4 /* FireStorage.swift in Sources */,
 				EC46B17626DF671300560EBD /* Constants.swift in Sources */,
 				EC46B15026DF634D00560EBD /* User.swift in Sources */,
 				EC46B14226DDF5AF00560EBD /* LoginViewController.swift in Sources */,

@@ -8,6 +8,7 @@
 import Foundation
 
 let userDefaults = UserDefaults.standard
+//filebase storage id
+public let kFILEREFERENCE = "gs://chapapp-660ad.appspot.com"
 
 public let kCURRENTUSER = "currentUser"
-
