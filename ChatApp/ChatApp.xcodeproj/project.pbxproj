@@ -22,6 +22,9 @@
 		ECA0F03826E93F780011B1D4 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0F03726E93F780011B1D4 /* SettingsTableViewController.swift */; };
 		ECA0F03B26EA7ED20011B1D4 /* EditProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0F03A26EA7ED20011B1D4 /* EditProfileTableViewController.swift */; };
 		ECA0F03E26EAD2190011B1D4 /* FireStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0F03D26EAD2190011B1D4 /* FireStorage.swift */; };
+		ECA0F06226EEAB130011B1D4 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0F06126EEAB130011B1D4 /* GlobalFunctions.swift */; };
+		ECA0F06526EECC9D0011B1D4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0F06426EECC9D0011B1D4 /* Extensions.swift */; };
+		ECA0F06826F010C10011B1D4 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0F06726F010C00011B1D4 /* Status.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		ECA0F03726E93F780011B1D4 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		ECA0F03A26EA7ED20011B1D4 /* EditProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewController.swift; sourceTree = "<group>"; };
 		ECA0F03D26EAD2190011B1D4 /* FireStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireStorage.swift; sourceTree = "<group>"; };
+		ECA0F06126EEAB130011B1D4 /* GlobalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
+		ECA0F06426EECC9D0011B1D4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		ECA0F06726F010C00011B1D4 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				EC46B14F26DF634C00560EBD /* User.swift */,
+				ECA0F06726F010C00011B1D4 /* Status.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -135,6 +142,8 @@
 		ECA0F03526E826180011B1D4 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				ECA0F06126EEAB130011B1D4 /* GlobalFunctions.swift */,
+				ECA0F06426EECC9D0011B1D4 /* Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -254,13 +263,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECA0F06226EEAB130011B1D4 /* GlobalFunctions.swift in Sources */,
 				ECA0EFAA26DFEC120011B1D4 /* FCollectionReference.swift in Sources */,
 				ECA0F03E26EAD2190011B1D4 /* FireStorage.swift in Sources */,
 				EC46B17626DF671300560EBD /* Constants.swift in Sources */,
 				EC46B15026DF634D00560EBD /* User.swift in Sources */,
 				EC46B14226DDF5AF00560EBD /* LoginViewController.swift in Sources */,
 				ECA0F03826E93F780011B1D4 /* SettingsTableViewController.swift in Sources */,
+				ECA0F06526EECC9D0011B1D4 /* Extensions.swift in Sources */,
 				ECA0F03B26EA7ED20011B1D4 /* EditProfileTableViewController.swift in Sources */,
+				ECA0F06826F010C10011B1D4 /* Status.swift in Sources */,
 				EC46B0E426DD621A00560EBD /* AppDelegate.swift in Sources */,
 				ECA0EFCF26DFED280011B1D4 /* FirebaseUserListener.swift in Sources */,
 				EC46B0E626DD621A00560EBD /* SceneDelegate.swift in Sources */,
