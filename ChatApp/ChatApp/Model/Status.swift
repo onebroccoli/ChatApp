@@ -16,7 +16,7 @@ enum Status: String {
     case AtWork = "At Work"
     case BatteryAboutToDie = "Battery About To Die"
     case CantTalk = "Can't Talk"
-    case InAMetting = "In a Meeting"
+    case InAMeeting = "In a Meeting"
     case AtTheGym = "At the Gym"
     case Sleeping = "Sleeping"
     case UrgentCallsOnly = "Urgent Calls Only"
@@ -26,7 +26,7 @@ enum Status: String {
         
         switch Status.Available {
         case .Available:
-            a.append(Available); fallthrough
+            a.append(.Available); fallthrough
         case .Busy:
             a.append(.Busy); fallthrough
         case .AtSchool:
@@ -39,8 +39,8 @@ enum Status: String {
             a.append(.BatteryAboutToDie); fallthrough
         case .CantTalk:
             a.append(.CantTalk); fallthrough
-        case .InAMetting:
-            a.append(.InAMetting); fallthrough
+        case .InAMeeting:
+            a.append(.InAMeeting); fallthrough
         case .AtTheGym:
             a.append(.AtTheGym); fallthrough
         case .Sleeping:
