@@ -71,6 +71,21 @@ class FirebaseUserListener {
         }
     }
     
+
+    func logOutCurrentUser(completion: @escaping(_ error: Error?) -> Void) {
+        do {
+            try Auth.auth().signOut()
+            userDefaults.removeObject(forKey: kCURRENTUSER)
+            userDefaults.synchronize()
+            completion(nil)
+        } catch let error as NSError{
+            completion(error)
+            
+        }
+        
+        
+    }
+    
     // MARK: - Save users
     func saveUserToFirestore(_ user: User) {
         
@@ -108,5 +123,49 @@ class FirebaseUserListener {
             
         }
         
+    }
+    
+    //return all users
+    func downloadAllUsersFromFirebase(completion: @escaping(_ allUsers: [User]) -> Void) {
+        var users: [User] = []
+        FirebaseReference(.User).limit(to: 500).getDocuments { (querySnapshot, error) in
+            guard let document = querySnapshot?.documents else {
+                print("no documents in all users")
+                return
+                
+            }
+            let allUsers = document.compactMap { (QueryDocumentSnapshot) -> User? in
+                return try? QueryDocumentSnapshot.data(as: User.self)
+            }
+            
+            for user in allUsers {
+                if User.currentId != user.id {
+                    users.append(user)
+                }
+            }
+            
+            completion(users) // return all users
+        }
+    }
+    
+    func downloadUsersFromFirebase(withIds: [String], completion: @escaping (_ allUsers: [User]) -> Void) {
+        var count = 0
+        var usersArray: [User] = []
+        
+        for userId in withIds {
+            FirebaseReference(.User).document(userId).getDocument { (QuerySnapshot, error) in
+                guard let document = QuerySnapshot else {
+                    print("no document for users")
+                    return
+                }
+                let user = try? document.data(as: User.self)
+                usersArray.append(user!)
+                if count == withIds.count {
+                    completion(usersArray) //return specified user id                }
+                    
+                    
+                }
+            }
+        }
     }
 }
