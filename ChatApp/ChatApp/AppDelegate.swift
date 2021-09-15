@@ -44,7 +44,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let status = Status.array.map { $0.rawValue }
             userDefaults.set(status,forKey: kSTATUS)
             userDefaults.set(true, forKey: kFIRSTRUN)
-            userDefaults.synchronize()
         }
         
     }
