@@ -12,3 +12,5 @@ let userDefaults = UserDefaults.standard
 public let kFILEREFERENCE = "gs://chapapp-660ad.appspot.com"
 
 public let kCURRENTUSER = "currentUser"
+public let kSTATUS = "status"
+public let kFIRSTRUN = "firstRUN"
