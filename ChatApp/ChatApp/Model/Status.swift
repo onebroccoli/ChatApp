@@ -47,7 +47,7 @@ enum Status: String {
             a.append(.Sleeping); fallthrough
         case .UrgentCallsOnly:
             a.append(.UrgentCallsOnly)
-       
+       print(a)
         return a
         }
     }
