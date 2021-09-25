@@ -11,6 +11,9 @@ let userDefaults = UserDefaults.standard
 //filebase storage id
 public let kFILEREFERENCE = "gs://chapapp-660ad.appspot.com"
 
+public let kNUMBEROFMESSAGES = 12
+
+
 public let kCURRENTUSER = "currentUser"
 public let kSTATUS = "status"
 public let kFIRSTRUN = "firstRUN"
@@ -26,5 +29,7 @@ public let kVIDEO = "video"
 public let kAUDIO = "audio"
 public let kLOCATION = "location"
 
+public let kDATE = "date"
+public let kREADDATE = "date"
 
 
