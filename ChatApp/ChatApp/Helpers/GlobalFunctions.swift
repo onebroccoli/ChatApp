@@ -6,7 +6,8 @@
 //
 
 import Foundation
-
+import UIKit
+import AVFoundation
 
 //extract image name from url
 /*
@@ -44,4 +45,27 @@ func timeElapsed(_ date: Date) -> String {
         elapsed = date.longDate()
     }
     return elapsed
+}
+
+func videoThumbnail(video: URL) -> UIImage {
+    let asset = AVURLAsset(url: video, options: nil)
+    let imageGenerator = AVAssetImageGenerator(asset:  asset)
+    imageGenerator.appliesPreferredTrackTransform = true
+    
+    let time = CMTimeMakeWithSeconds(0.5, preferredTimescale: 1000)
+    var actualTime = CMTime.zero
+    
+    var image: CGImage?
+    
+    do {
+        image = try imageGenerator.copyCGImage(at: time, actualTime: &actualTime)
+    } catch let error as NSError {
+        print("error making thumbnail ", error.localizedDescription)
+    }
+    
+    if image != nil {
+        return UIImage(cgImage: image!)
+    } else {
+        return UIImage(named: "photoPlaceholder")!
+    }
 }
