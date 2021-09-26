@@ -17,15 +17,40 @@
 		EC46B14226DDF5AF00560EBD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46B14126DDF5AF00560EBD /* LoginViewController.swift */; };
 		EC46B15026DF634D00560EBD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46B14F26DF634C00560EBD /* User.swift */; };
 		EC46B17626DF671300560EBD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46B17526DF671300560EBD /* Constants.swift */; };
+		EC8ECD6826F40A0B00CE0B36 /* FirebaseRecentListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ECD6726F40A0B00CE0B36 /* FirebaseRecentListener.swift */; };
+		EC8ECD6B26F51CE600CE0B36 /* ChatsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ECD6A26F51CE600CE0B36 /* ChatsTableViewController.swift */; };
+		EC8ECD6E26F5500400CE0B36 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ECD6D26F5500400CE0B36 /* ChatViewController.swift */; };
+		EC8ECD7126F9058C00CE0B36 /* MessageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ECD7026F9058C00CE0B36 /* MessageDataSource.swift */; };
+		EC8ECD7726F905F500CE0B36 /* MessageCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ECD7626F905F500CE0B36 /* MessageCellDelegate.swift */; };
+		EC8ECD7926F9060A00CE0B36 /* MessageDisplayDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ECD7826F9060A00CE0B36 /* MessageDisplayDelegate.swift */; };
+		EC8ECD7C26F9062200CE0B36 /* MessageLayoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ECD7B26F9062200CE0B36 /* MessageLayoutDelegate.swift */; };
+		EC8ECD7F26F9065400CE0B36 /* InputBarAccessoryViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ECD7E26F9065400CE0B36 /* InputBarAccessoryViewDelegate.swift */; };
+		EC8ECD8226F90D9300CE0B36 /* MessageKitDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ECD8126F90D9300CE0B36 /* MessageKitDefaults.swift */; };
+		EC8ECD8526F9146C00CE0B36 /* MKMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ECD8426F9146C00CE0B36 /* MKMessage.swift */; };
+		EC8ECD8826F916FA00CE0B36 /* LocalMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ECD8726F916FA00CE0B36 /* LocalMessage.swift */; };
+		EC8ECE1426F9378F00CE0B36 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ECE1326F9378F00CE0B36 /* RealmManager.swift */; };
+		EC8ECE1726F93A1E00CE0B36 /* OutgoingMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ECE1626F93A1E00CE0B36 /* OutgoingMessage.swift */; };
+		EC8ECE5E26FA99EA00CE0B36 /* FirebaseMessageListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ECE5D26FA99EA00CE0B36 /* FirebaseMessageListener.swift */; };
+		EC8ECE8226FAAA1500CE0B36 /* IncomingMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ECE8126FAAA1500CE0B36 /* IncomingMessage.swift */; };
+		EC8ECEE826FBE0C600CE0B36 /* FirebaseTypingListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ECEE726FBE0C600CE0B36 /* FirebaseTypingListener.swift */; };
+		EC8ECF6F26FE8CB000CE0B36 /* PhotoMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ECF6E26FE8CB000CE0B36 /* PhotoMessage.swift */; };
+		EC8ECFD726FEA36200CE0B36 /* VideoMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ECFD626FEA36200CE0B36 /* VideoMessage.swift */; };
+		EC8ECFFC26FEF08D00CE0B36 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ECFFB26FEF08D00CE0B36 /* LocationManager.swift */; };
 		ECA0EFAA26DFEC120011B1D4 /* FCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0EFA926DFEC120011B1D4 /* FCollectionReference.swift */; };
 		ECA0EFCF26DFED280011B1D4 /* FirebaseUserListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0EFCE26DFED270011B1D4 /* FirebaseUserListener.swift */; };
 		ECA0F03826E93F780011B1D4 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0F03726E93F780011B1D4 /* SettingsTableViewController.swift */; };
 		ECA0F03B26EA7ED20011B1D4 /* EditProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0F03A26EA7ED20011B1D4 /* EditProfileTableViewController.swift */; };
-		ECA0F03E26EAD2190011B1D4 /* FireStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0F03D26EAD2190011B1D4 /* FireStorage.swift */; };
+		ECA0F03E26EAD2190011B1D4 /* FileStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0F03D26EAD2190011B1D4 /* FileStorage.swift */; };
 		ECA0F06226EEAB130011B1D4 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0F06126EEAB130011B1D4 /* GlobalFunctions.swift */; };
 		ECA0F06526EECC9D0011B1D4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0F06426EECC9D0011B1D4 /* Extensions.swift */; };
 		ECA0F06826F010C10011B1D4 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0F06726F010C00011B1D4 /* Status.swift */; };
 		ECA0F06E26F06DE50011B1D4 /* StatusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0F06D26F06DE50011B1D4 /* StatusTableViewController.swift */; };
+		ECA0F07226F13DFA0011B1D4 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0F07126F13DFA0011B1D4 /* UserTableViewCell.swift */; };
+		ECA0F07626F13E190011B1D4 /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0F07526F13E190011B1D4 /* UsersTableViewController.swift */; };
+		ECA0F08226F26AA70011B1D4 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0F08126F26AA70011B1D4 /* ProfileTableViewController.swift */; };
+		ECA0F0AA26F2AD840011B1D4 /* RecentChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0F0A926F2AD830011B1D4 /* RecentChat.swift */; };
+		ECA0F0AD26F2C05E0011B1D4 /* RecentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0F0AC26F2C05E0011B1D4 /* RecentTableViewCell.swift */; };
+		ECA0F0B026F31A420011B1D4 /* StartChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0F0AF26F31A410011B1D4 /* StartChat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,15 +68,40 @@
 		EC46B14126DDF5AF00560EBD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EC46B14F26DF634C00560EBD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = "../New Group/User.swift"; sourceTree = "<group>"; };
 		EC46B17526DF671300560EBD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EC8ECD6726F40A0B00CE0B36 /* FirebaseRecentListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRecentListener.swift; sourceTree = "<group>"; };
+		EC8ECD6A26F51CE600CE0B36 /* ChatsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsTableViewController.swift; sourceTree = "<group>"; };
+		EC8ECD6D26F5500400CE0B36 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		EC8ECD7026F9058C00CE0B36 /* MessageDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDataSource.swift; sourceTree = "<group>"; };
+		EC8ECD7626F905F500CE0B36 /* MessageCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCellDelegate.swift; sourceTree = "<group>"; };
+		EC8ECD7826F9060A00CE0B36 /* MessageDisplayDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDisplayDelegate.swift; sourceTree = "<group>"; };
+		EC8ECD7B26F9062200CE0B36 /* MessageLayoutDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageLayoutDelegate.swift; sourceTree = "<group>"; };
+		EC8ECD7E26F9065400CE0B36 /* InputBarAccessoryViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputBarAccessoryViewDelegate.swift; sourceTree = "<group>"; };
+		EC8ECD8126F90D9300CE0B36 /* MessageKitDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageKitDefaults.swift; sourceTree = "<group>"; };
+		EC8ECD8426F9146C00CE0B36 /* MKMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMessage.swift; sourceTree = "<group>"; };
+		EC8ECD8726F916FA00CE0B36 /* LocalMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalMessage.swift; sourceTree = "<group>"; };
+		EC8ECE1326F9378F00CE0B36 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		EC8ECE1626F93A1E00CE0B36 /* OutgoingMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutgoingMessage.swift; sourceTree = "<group>"; };
+		EC8ECE5D26FA99EA00CE0B36 /* FirebaseMessageListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseMessageListener.swift; sourceTree = "<group>"; };
+		EC8ECE8126FAAA1500CE0B36 /* IncomingMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingMessage.swift; sourceTree = "<group>"; };
+		EC8ECEE726FBE0C600CE0B36 /* FirebaseTypingListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseTypingListener.swift; sourceTree = "<group>"; };
+		EC8ECF6E26FE8CB000CE0B36 /* PhotoMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoMessage.swift; sourceTree = "<group>"; };
+		EC8ECFD626FEA36200CE0B36 /* VideoMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoMessage.swift; sourceTree = "<group>"; };
+		EC8ECFFB26FEF08D00CE0B36 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		ECA0EFA926DFEC120011B1D4 /* FCollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCollectionReference.swift; sourceTree = "<group>"; };
 		ECA0EFCE26DFED270011B1D4 /* FirebaseUserListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUserListener.swift; sourceTree = "<group>"; };
 		ECA0F03726E93F780011B1D4 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		ECA0F03A26EA7ED20011B1D4 /* EditProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewController.swift; sourceTree = "<group>"; };
-		ECA0F03D26EAD2190011B1D4 /* FireStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireStorage.swift; sourceTree = "<group>"; };
+		ECA0F03D26EAD2190011B1D4 /* FileStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileStorage.swift; sourceTree = "<group>"; };
 		ECA0F06126EEAB130011B1D4 /* GlobalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
 		ECA0F06426EECC9D0011B1D4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ECA0F06726F010C00011B1D4 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		ECA0F06D26F06DE50011B1D4 /* StatusTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTableViewController.swift; sourceTree = "<group>"; };
+		ECA0F07126F13DFA0011B1D4 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		ECA0F07526F13E190011B1D4 /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
+		ECA0F08126F26AA70011B1D4 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		ECA0F0A926F2AD830011B1D4 /* RecentChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentChat.swift; sourceTree = "<group>"; };
+		ECA0F0AC26F2C05E0011B1D4 /* RecentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTableViewCell.swift; sourceTree = "<group>"; };
+		ECA0F0AF26F31A410011B1D4 /* StartChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartChat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,16 +154,16 @@
 		EC46B0E226DD621A00560EBD /* ChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				ECA0F08026F26A700011B1D4 /* MainViews */,
 				EC46B17526DF671300560EBD /* Constants.swift */,
+				ECA0F07D26F26A580011B1D4 /* LoginViews */,
+				ECA0F07A26F26A0A0011B1D4 /* CustomCells */,
+				ECA0F07826F269EB0011B1D4 /* Settings */,
+				EC46B0E326DD621A00560EBD /* AppDelegate.swift */,
+				EC46B0E526DD621A00560EBD /* SceneDelegate.swift */,
 				ECA0EFCD26DFECF70011B1D4 /* FirebaseHelpers */,
 				EC46B15226DF635D00560EBD /* Model */,
 				ECA0F03526E826180011B1D4 /* Helpers */,
-				EC46B0E326DD621A00560EBD /* AppDelegate.swift */,
-				EC46B0E526DD621A00560EBD /* SceneDelegate.swift */,
-				EC46B14126DDF5AF00560EBD /* LoginViewController.swift */,
-				ECA0F03726E93F780011B1D4 /* SettingsTableViewController.swift */,
-				ECA0F03A26EA7ED20011B1D4 /* EditProfileTableViewController.swift */,
-				ECA0F06D26F06DE50011B1D4 /* StatusTableViewController.swift */,
 				EC46B0E926DD621A00560EBD /* Main.storyboard */,
 				EC46B0EC26DD621D00560EBD /* Assets.xcassets */,
 				EC46B0EE26DD621D00560EBD /* LaunchScreen.storyboard */,
@@ -128,8 +178,45 @@
 			children = (
 				EC46B14F26DF634C00560EBD /* User.swift */,
 				ECA0F06726F010C00011B1D4 /* Status.swift */,
+				EC8ECD8426F9146C00CE0B36 /* MKMessage.swift */,
+				ECA0F0A926F2AD830011B1D4 /* RecentChat.swift */,
+				EC8ECE1626F93A1E00CE0B36 /* OutgoingMessage.swift */,
+				EC8ECE8126FAAA1500CE0B36 /* IncomingMessage.swift */,
+				EC8ECFFB26FEF08D00CE0B36 /* LocationManager.swift */,
+				EC8ECFD526FEA34300CE0B36 /* Media Messages */,
+				EC8ECD8A26F9170600CE0B36 /* RealmMessages */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		EC8ECD7326F905CF00CE0B36 /* ChatViewExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				EC8ECD7026F9058C00CE0B36 /* MessageDataSource.swift */,
+				EC8ECD7626F905F500CE0B36 /* MessageCellDelegate.swift */,
+				EC8ECD7826F9060A00CE0B36 /* MessageDisplayDelegate.swift */,
+				EC8ECD7B26F9062200CE0B36 /* MessageLayoutDelegate.swift */,
+				EC8ECD7E26F9065400CE0B36 /* InputBarAccessoryViewDelegate.swift */,
+			);
+			path = ChatViewExtensions;
+			sourceTree = "<group>";
+		};
+		EC8ECD8A26F9170600CE0B36 /* RealmMessages */ = {
+			isa = PBXGroup;
+			children = (
+				EC8ECD8726F916FA00CE0B36 /* LocalMessage.swift */,
+				EC8ECE1326F9378F00CE0B36 /* RealmManager.swift */,
+			);
+			path = RealmMessages;
+			sourceTree = "<group>";
+		};
+		EC8ECFD526FEA34300CE0B36 /* Media Messages */ = {
+			isa = PBXGroup;
+			children = (
+				EC8ECF6E26FE8CB000CE0B36 /* PhotoMessage.swift */,
+				EC8ECFD626FEA36200CE0B36 /* VideoMessage.swift */,
+			);
+			path = "Media Messages";
 			sourceTree = "<group>";
 		};
 		ECA0EFCD26DFECF70011B1D4 /* FirebaseHelpers */ = {
@@ -137,7 +224,9 @@
 			children = (
 				ECA0EFA926DFEC120011B1D4 /* FCollectionReference.swift */,
 				ECA0EFCE26DFED270011B1D4 /* FirebaseUserListener.swift */,
-				ECA0F03D26EAD2190011B1D4 /* FireStorage.swift */,
+				EC8ECD6726F40A0B00CE0B36 /* FirebaseRecentListener.swift */,
+				EC8ECE5D26FA99EA00CE0B36 /* FirebaseMessageListener.swift */,
+				ECA0F03D26EAD2190011B1D4 /* FileStorage.swift */,
 			);
 			path = FirebaseHelpers;
 			sourceTree = "<group>";
@@ -147,8 +236,58 @@
 			children = (
 				ECA0F06126EEAB130011B1D4 /* GlobalFunctions.swift */,
 				ECA0F06426EECC9D0011B1D4 /* Extensions.swift */,
+				EC8ECD8126F90D9300CE0B36 /* MessageKitDefaults.swift */,
+				ECA0F0AF26F31A410011B1D4 /* StartChat.swift */,
+				EC8ECEE726FBE0C600CE0B36 /* FirebaseTypingListener.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		ECA0F07826F269EB0011B1D4 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				ECA0F03726E93F780011B1D4 /* SettingsTableViewController.swift */,
+				ECA0F03A26EA7ED20011B1D4 /* EditProfileTableViewController.swift */,
+				ECA0F06D26F06DE50011B1D4 /* StatusTableViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		ECA0F07A26F26A0A0011B1D4 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				ECA0F07126F13DFA0011B1D4 /* UserTableViewCell.swift */,
+				ECA0F0AC26F2C05E0011B1D4 /* RecentTableViewCell.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		ECA0F07D26F26A580011B1D4 /* LoginViews */ = {
+			isa = PBXGroup;
+			children = (
+				EC46B14126DDF5AF00560EBD /* LoginViewController.swift */,
+			);
+			path = LoginViews;
+			sourceTree = "<group>";
+		};
+		ECA0F08026F26A700011B1D4 /* MainViews */ = {
+			isa = PBXGroup;
+			children = (
+				ECA0F07526F13E190011B1D4 /* UsersTableViewController.swift */,
+				EC8ECD6A26F51CE600CE0B36 /* ChatsTableViewController.swift */,
+				ECA0F08526F26AB70011B1D4 /* SecondaryViews */,
+			);
+			path = MainViews;
+			sourceTree = "<group>";
+		};
+		ECA0F08526F26AB70011B1D4 /* SecondaryViews */ = {
+			isa = PBXGroup;
+			children = (
+				ECA0F08126F26AA70011B1D4 /* ProfileTableViewController.swift */,
+				EC8ECD6D26F5500400CE0B36 /* ChatViewController.swift */,
+				EC8ECD7326F905CF00CE0B36 /* ChatViewExtensions */,
+			);
+			path = SecondaryViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,20 +405,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC8ECF6F26FE8CB000CE0B36 /* PhotoMessage.swift in Sources */,
+				ECA0F0AA26F2AD840011B1D4 /* RecentChat.swift in Sources */,
+				EC8ECD8826F916FA00CE0B36 /* LocalMessage.swift in Sources */,
 				ECA0F06226EEAB130011B1D4 /* GlobalFunctions.swift in Sources */,
 				ECA0EFAA26DFEC120011B1D4 /* FCollectionReference.swift in Sources */,
-				ECA0F03E26EAD2190011B1D4 /* FireStorage.swift in Sources */,
+				EC8ECD6826F40A0B00CE0B36 /* FirebaseRecentListener.swift in Sources */,
+				ECA0F07626F13E190011B1D4 /* UsersTableViewController.swift in Sources */,
+				EC8ECD7F26F9065400CE0B36 /* InputBarAccessoryViewDelegate.swift in Sources */,
+				EC8ECD8226F90D9300CE0B36 /* MessageKitDefaults.swift in Sources */,
+				EC8ECD7726F905F500CE0B36 /* MessageCellDelegate.swift in Sources */,
+				ECA0F03E26EAD2190011B1D4 /* FileStorage.swift in Sources */,
 				EC46B17626DF671300560EBD /* Constants.swift in Sources */,
+				ECA0F07226F13DFA0011B1D4 /* UserTableViewCell.swift in Sources */,
 				EC46B15026DF634D00560EBD /* User.swift in Sources */,
+				ECA0F08226F26AA70011B1D4 /* ProfileTableViewController.swift in Sources */,
 				EC46B14226DDF5AF00560EBD /* LoginViewController.swift in Sources */,
+				EC8ECE1726F93A1E00CE0B36 /* OutgoingMessage.swift in Sources */,
 				ECA0F03826E93F780011B1D4 /* SettingsTableViewController.swift in Sources */,
+				EC8ECEE826FBE0C600CE0B36 /* FirebaseTypingListener.swift in Sources */,
+				EC8ECFD726FEA36200CE0B36 /* VideoMessage.swift in Sources */,
 				ECA0F06526EECC9D0011B1D4 /* Extensions.swift in Sources */,
 				ECA0F03B26EA7ED20011B1D4 /* EditProfileTableViewController.swift in Sources */,
 				ECA0F06E26F06DE50011B1D4 /* StatusTableViewController.swift in Sources */,
 				ECA0F06826F010C10011B1D4 /* Status.swift in Sources */,
+				EC8ECE8226FAAA1500CE0B36 /* IncomingMessage.swift in Sources */,
+				EC8ECD6E26F5500400CE0B36 /* ChatViewController.swift in Sources */,
 				EC46B0E426DD621A00560EBD /* AppDelegate.swift in Sources */,
+				EC8ECD7926F9060A00CE0B36 /* MessageDisplayDelegate.swift in Sources */,
+				EC8ECD7126F9058C00CE0B36 /* MessageDataSource.swift in Sources */,
+				EC8ECD6B26F51CE600CE0B36 /* ChatsTableViewController.swift in Sources */,
+				EC8ECE5E26FA99EA00CE0B36 /* FirebaseMessageListener.swift in Sources */,
+				EC8ECE1426F9378F00CE0B36 /* RealmManager.swift in Sources */,
+				EC8ECD7C26F9062200CE0B36 /* MessageLayoutDelegate.swift in Sources */,
+				ECA0F0B026F31A420011B1D4 /* StartChat.swift in Sources */,
 				ECA0EFCF26DFED280011B1D4 /* FirebaseUserListener.swift in Sources */,
 				EC46B0E626DD621A00560EBD /* SceneDelegate.swift in Sources */,
+				ECA0F0AD26F2C05E0011B1D4 /* RecentTableViewCell.swift in Sources */,
+				EC8ECD8526F9146C00CE0B36 /* MKMessage.swift in Sources */,
+				EC8ECFFC26FEF08D00CE0B36 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +594,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CN9333TZ4H;
 				INFOPLIST_FILE = ChatApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,6 +615,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CN9333TZ4H;
 				INFOPLIST_FILE = ChatApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
