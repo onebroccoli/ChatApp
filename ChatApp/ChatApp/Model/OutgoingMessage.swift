@@ -37,6 +37,12 @@ class OutgoingMessage {
             
         }
         
+        if location != nil {
+            sendLocationMessage(message: message, memberIds: memberIds)
+            print("send location", LocationManager.shared.currentLocation)
+            
+        }
+        
         // TODO: send push notification
         FirebaseRecentListener.shared.updateRecents(chatRoomId: chatId, lastMessage: message.message)
         //TODO: update recent
@@ -118,4 +124,13 @@ func sendVideoMessage(message: LocalMessage, video: Video, memberIds: [String]) 
     }
     
     
+}
+
+func sendLocationMessage(message: LocalMessage, memberIds: [String]) {
+    let currentLocation = LocationManager.shared.currentLocation
+    message.message = "Location message"
+    message.type = kLOCATION
+    message.latitude = currentLocation?.latitude ?? 0.0
+    message.longtitude = currentLocation?.longitude ?? 0.0
+
 }
