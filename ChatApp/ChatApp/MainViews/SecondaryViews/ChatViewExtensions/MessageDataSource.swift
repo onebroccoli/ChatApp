@@ -27,7 +27,7 @@ extension ChatViewController: MessagesDataSource {
             //show title
             //pull to load more
             let showLoadMore = (indexPath.section == 0 ) && (allLocalMessages.count > displayingMessagesCount) //if it's first msg or total msg > current display msg
-            print("showtoloadmore flag is ",showLoadMore)
+//            print("showtoloadmore flag is ",showLoadMore)
             let text = showLoadMore ? "Pull to load more" : MessageKitDateFormatter.shared.string(from: message.sentDate)
             let font = showLoadMore ? UIFont.systemFont(ofSize: 13) :
                 UIFont.boldSystemFont(ofSize: 10)
