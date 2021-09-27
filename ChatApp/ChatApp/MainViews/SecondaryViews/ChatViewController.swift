@@ -62,6 +62,12 @@ class ChatViewController: MessagesViewController {
     // Listeners
     var notificationToken: NotificationToken?
     
+    var longPressGesture: UILongPressGestureRecognizer! //recognize when click microphone
+    var audioFileName = "" //where to save
+    var audioDuration: Date! //
+    
+    
+    
     
     // MARK: - Inits
     init(chatId: String, recipientId: String, recipientName: String) {
@@ -83,6 +89,7 @@ class ChatViewController: MessagesViewController {
         
         createTypingObserver()
         configureMessageCollectionView()
+        configureGestureRecognizer()
         configureMessageInputBar()
         
         configureLeftBarButton()
@@ -109,6 +116,15 @@ class ChatViewController: MessagesViewController {
         
     }
     
+    private func configureGestureRecognizer() {
+        longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(recordAudio))
+        longPressGesture.minimumPressDuration = 0.5 //press at least 0.5 second before it starts to record
+        longPressGesture.delaysTouchesBegan = true
+        
+    }
+    
+    
+    
     private func configureMessageInputBar() {
         messageInputBar.delegate = self
         let attachButton = InputBarButtonItem()
@@ -125,6 +141,9 @@ class ChatViewController: MessagesViewController {
         micButton.setSize(CGSize(width: 30, height: 30), animated: false)
         
         //add gesture recognizer
+        micButton.addGestureRecognizer(longPressGesture)
+        
+        
         messageInputBar.setStackViewItems([attachButton], forStack: .left, animated: false)
         messageInputBar.setLeftStackViewWidthConstant(to: 36, animated: false)
         
@@ -283,7 +302,7 @@ class ChatViewController: MessagesViewController {
     func messageSend(text: String?, photo: UIImage?, video: Video?, audio: String?, location: String?, audioDuration: Float = 0.0) {
 //        print("sending text ", text)
 //        print("messageSend")
-        OutgoingMessage.send(chatId: chatId, text: text, photo: photo, video: video, audio: audio, location: location, memberIds: [User.currentId, recipientId])
+        OutgoingMessage.send(chatId: chatId, text: text, photo: photo, video: video, audio: audio, audioDuration: audioDuration, location: location, memberIds: [User.currentId, recipientId])
 
     }
     
@@ -421,6 +440,34 @@ class ChatViewController: MessagesViewController {
         
         self.present(gallery, animated: true, completion: nil)
         
+    }
+    
+    
+    //MARK: - AudioMessages
+    @objc func recordAudio() {
+        switch longPressGesture.state {
+        case .began:
+            audioDuration = Date()
+            audioFileName = Date().stringDate()
+            //start recording
+            AudioRecorder.shared.startRecording(fileName: audioFileName)
+        case .ended:
+            //stop recording
+            AudioRecorder.shared.finishRecording()
+        
+        //check file save successfully
+            if fileExistsAtPath(path: audioFileName + ".m4a") {
+                //send message
+                let audioD = audioDuration.interval(ofComponent: .second, from: Date())
+                
+                messageSend(text: nil, photo: nil, video: nil, audio: audioFileName, location: nil, audioDuration: audioD)
+            } else {
+                print("no audio file")
+            }
+            audioFileName = ""
+        @unknown default:
+            print("unknown")
+        }
     }
     
 }
