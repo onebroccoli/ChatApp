@@ -43,6 +43,10 @@ class OutgoingMessage {
             
         }
         
+        if audio != nil {
+            print ("send audio", audio, audioDuration)
+        }
+        
         // TODO: send push notification
         FirebaseRecentListener.shared.updateRecents(chatRoomId: chatId, lastMessage: message.message)
         //TODO: update recent
@@ -132,5 +136,17 @@ func sendLocationMessage(message: LocalMessage, memberIds: [String]) {
     message.type = kLOCATION
     message.latitude = currentLocation?.latitude ?? 0.0
     message.longtitude = currentLocation?.longitude ?? 0.0
+    
+    OutgoingMessage.sendMessage(message: message, memberIds: memberIds)
+
+}
+
+
+
+func sendAudioMessage(message: LocalMessage, audioFileName: String, audioDuration: Float, memberIds: [String]) {
+    message.message = "Audio message"
+    message.type = kAUDIO
+    let fileDirectory = "MediaMessages/Audio/" + "\(message.chatRoomId)/" + "_\(fileName)" + ".m4a"
+    
 
 }
