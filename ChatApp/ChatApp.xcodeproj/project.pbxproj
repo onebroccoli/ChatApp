@@ -36,6 +36,20 @@
 		EC8ECF6F26FE8CB000CE0B36 /* PhotoMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ECF6E26FE8CB000CE0B36 /* PhotoMessage.swift */; };
 		EC8ECFD726FEA36200CE0B36 /* VideoMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ECFD626FEA36200CE0B36 /* VideoMessage.swift */; };
 		EC8ECFFC26FEF08D00CE0B36 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ECFFB26FEF08D00CE0B36 /* LocationManager.swift */; };
+		EC8ECFFF27004A2900CE0B36 /* LocationMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ECFFE27004A2900CE0B36 /* LocationMessage.swift */; };
+		EC8ED0022700525800CE0B36 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ED0012700525800CE0B36 /* MapViewController.swift */; };
+		EC8ED00527005B1100CE0B36 /* MapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ED00427005B1100CE0B36 /* MapAnnotation.swift */; };
+		EC8ED00827023E6400CE0B36 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ED00727023E6400CE0B36 /* AudioRecorder.swift */; };
+		EC8ED04D2702746300CE0B36 /* AudioMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ED04C2702746300CE0B36 /* AudioMessage.swift */; };
+		EC8ED0532702806600CE0B36 /* BasicAudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ED0522702806600CE0B36 /* BasicAudioController.swift */; };
+		EC8ED09B2702CACE00CE0B36 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ED09A2702CACE00CE0B36 /* Channel.swift */; };
+		EC8ED0CC27039E6100CE0B36 /* ChannelsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ED0CB27039E6100CE0B36 /* ChannelsTableViewController.swift */; };
+		EC8ED0CF2703A2ED00CE0B36 /* ChannelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ED0CE2703A2ED00CE0B36 /* ChannelTableViewCell.swift */; };
+		EC8ED0D22703B08C00CE0B36 /* MyChannelsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ED0D12703B08C00CE0B36 /* MyChannelsTableViewController.swift */; };
+		EC8ED0D52703B0A500CE0B36 /* AddChannelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ED0D42703B0A500CE0B36 /* AddChannelTableViewController.swift */; };
+		EC8ED0F92703DCDB00CE0B36 /* FilebaseChannelListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ED0F82703DCDB00CE0B36 /* FilebaseChannelListener.swift */; };
+		EC8ED1802705271600CE0B36 /* ChannelDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ED17F2705271600CE0B36 /* ChannelDetailTableViewController.swift */; };
+		EC8ED1A527053B2500CE0B36 /* ChannelChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8ED1A427053B2400CE0B36 /* ChannelChatViewController.swift */; };
 		ECA0EFAA26DFEC120011B1D4 /* FCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0EFA926DFEC120011B1D4 /* FCollectionReference.swift */; };
 		ECA0EFCF26DFED280011B1D4 /* FirebaseUserListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0EFCE26DFED270011B1D4 /* FirebaseUserListener.swift */; };
 		ECA0F03826E93F780011B1D4 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA0F03726E93F780011B1D4 /* SettingsTableViewController.swift */; };
@@ -87,6 +101,20 @@
 		EC8ECF6E26FE8CB000CE0B36 /* PhotoMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoMessage.swift; sourceTree = "<group>"; };
 		EC8ECFD626FEA36200CE0B36 /* VideoMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoMessage.swift; sourceTree = "<group>"; };
 		EC8ECFFB26FEF08D00CE0B36 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		EC8ECFFE27004A2900CE0B36 /* LocationMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMessage.swift; sourceTree = "<group>"; };
+		EC8ED0012700525800CE0B36 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		EC8ED00427005B1100CE0B36 /* MapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotation.swift; sourceTree = "<group>"; };
+		EC8ED00727023E6400CE0B36 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		EC8ED04C2702746300CE0B36 /* AudioMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioMessage.swift; sourceTree = "<group>"; };
+		EC8ED0522702806600CE0B36 /* BasicAudioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAudioController.swift; sourceTree = "<group>"; };
+		EC8ED09A2702CACE00CE0B36 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		EC8ED0CB27039E6100CE0B36 /* ChannelsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsTableViewController.swift; sourceTree = "<group>"; };
+		EC8ED0CE2703A2ED00CE0B36 /* ChannelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelTableViewCell.swift; sourceTree = "<group>"; };
+		EC8ED0D12703B08C00CE0B36 /* MyChannelsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChannelsTableViewController.swift; sourceTree = "<group>"; };
+		EC8ED0D42703B0A500CE0B36 /* AddChannelTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChannelTableViewController.swift; sourceTree = "<group>"; };
+		EC8ED0F82703DCDB00CE0B36 /* FilebaseChannelListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilebaseChannelListener.swift; sourceTree = "<group>"; };
+		EC8ED17F2705271600CE0B36 /* ChannelDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailTableViewController.swift; sourceTree = "<group>"; };
+		EC8ED1A427053B2400CE0B36 /* ChannelChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelChatViewController.swift; sourceTree = "<group>"; };
 		ECA0EFA926DFEC120011B1D4 /* FCollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCollectionReference.swift; sourceTree = "<group>"; };
 		ECA0EFCE26DFED270011B1D4 /* FirebaseUserListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUserListener.swift; sourceTree = "<group>"; };
 		ECA0F03726E93F780011B1D4 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
@@ -183,6 +211,10 @@
 				EC8ECE1626F93A1E00CE0B36 /* OutgoingMessage.swift */,
 				EC8ECE8126FAAA1500CE0B36 /* IncomingMessage.swift */,
 				EC8ECFFB26FEF08D00CE0B36 /* LocationManager.swift */,
+				EC8ED00427005B1100CE0B36 /* MapAnnotation.swift */,
+				EC8ED00727023E6400CE0B36 /* AudioRecorder.swift */,
+				EC8ED0522702806600CE0B36 /* BasicAudioController.swift */,
+				EC8ED09A2702CACE00CE0B36 /* Channel.swift */,
 				EC8ECFD526FEA34300CE0B36 /* Media Messages */,
 				EC8ECD8A26F9170600CE0B36 /* RealmMessages */,
 			);
@@ -215,6 +247,8 @@
 			children = (
 				EC8ECF6E26FE8CB000CE0B36 /* PhotoMessage.swift */,
 				EC8ECFD626FEA36200CE0B36 /* VideoMessage.swift */,
+				EC8ECFFE27004A2900CE0B36 /* LocationMessage.swift */,
+				EC8ED04C2702746300CE0B36 /* AudioMessage.swift */,
 			);
 			path = "Media Messages";
 			sourceTree = "<group>";
@@ -226,6 +260,7 @@
 				ECA0EFCE26DFED270011B1D4 /* FirebaseUserListener.swift */,
 				EC8ECD6726F40A0B00CE0B36 /* FirebaseRecentListener.swift */,
 				EC8ECE5D26FA99EA00CE0B36 /* FirebaseMessageListener.swift */,
+				EC8ED0F82703DCDB00CE0B36 /* FilebaseChannelListener.swift */,
 				ECA0F03D26EAD2190011B1D4 /* FileStorage.swift */,
 			);
 			path = FirebaseHelpers;
@@ -258,6 +293,7 @@
 			children = (
 				ECA0F07126F13DFA0011B1D4 /* UserTableViewCell.swift */,
 				ECA0F0AC26F2C05E0011B1D4 /* RecentTableViewCell.swift */,
+				EC8ED0CE2703A2ED00CE0B36 /* ChannelTableViewCell.swift */,
 			);
 			path = CustomCells;
 			sourceTree = "<group>";
@@ -275,6 +311,7 @@
 			children = (
 				ECA0F07526F13E190011B1D4 /* UsersTableViewController.swift */,
 				EC8ECD6A26F51CE600CE0B36 /* ChatsTableViewController.swift */,
+				EC8ED0CB27039E6100CE0B36 /* ChannelsTableViewController.swift */,
 				ECA0F08526F26AB70011B1D4 /* SecondaryViews */,
 			);
 			path = MainViews;
@@ -284,7 +321,12 @@
 			isa = PBXGroup;
 			children = (
 				ECA0F08126F26AA70011B1D4 /* ProfileTableViewController.swift */,
+				EC8ED0012700525800CE0B36 /* MapViewController.swift */,
 				EC8ECD6D26F5500400CE0B36 /* ChatViewController.swift */,
+				EC8ED1A427053B2400CE0B36 /* ChannelChatViewController.swift */,
+				EC8ED0D12703B08C00CE0B36 /* MyChannelsTableViewController.swift */,
+				EC8ED0D42703B0A500CE0B36 /* AddChannelTableViewController.swift */,
+				EC8ED17F2705271600CE0B36 /* ChannelDetailTableViewController.swift */,
 				EC8ECD7326F905CF00CE0B36 /* ChatViewExtensions */,
 			);
 			path = SecondaryViews;
@@ -405,6 +447,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC8ED0F92703DCDB00CE0B36 /* FilebaseChannelListener.swift in Sources */,
 				EC8ECF6F26FE8CB000CE0B36 /* PhotoMessage.swift in Sources */,
 				ECA0F0AA26F2AD840011B1D4 /* RecentChat.swift in Sources */,
 				EC8ECD8826F916FA00CE0B36 /* LocalMessage.swift in Sources */,
@@ -414,33 +457,46 @@
 				ECA0F07626F13E190011B1D4 /* UsersTableViewController.swift in Sources */,
 				EC8ECD7F26F9065400CE0B36 /* InputBarAccessoryViewDelegate.swift in Sources */,
 				EC8ECD8226F90D9300CE0B36 /* MessageKitDefaults.swift in Sources */,
+				EC8ED00827023E6400CE0B36 /* AudioRecorder.swift in Sources */,
+				EC8ED0532702806600CE0B36 /* BasicAudioController.swift in Sources */,
 				EC8ECD7726F905F500CE0B36 /* MessageCellDelegate.swift in Sources */,
 				ECA0F03E26EAD2190011B1D4 /* FileStorage.swift in Sources */,
+				EC8ED1802705271600CE0B36 /* ChannelDetailTableViewController.swift in Sources */,
 				EC46B17626DF671300560EBD /* Constants.swift in Sources */,
 				ECA0F07226F13DFA0011B1D4 /* UserTableViewCell.swift in Sources */,
 				EC46B15026DF634D00560EBD /* User.swift in Sources */,
 				ECA0F08226F26AA70011B1D4 /* ProfileTableViewController.swift in Sources */,
+				EC8ED0CF2703A2ED00CE0B36 /* ChannelTableViewCell.swift in Sources */,
+				EC8ED1A527053B2500CE0B36 /* ChannelChatViewController.swift in Sources */,
 				EC46B14226DDF5AF00560EBD /* LoginViewController.swift in Sources */,
 				EC8ECE1726F93A1E00CE0B36 /* OutgoingMessage.swift in Sources */,
 				ECA0F03826E93F780011B1D4 /* SettingsTableViewController.swift in Sources */,
+				EC8ED0D52703B0A500CE0B36 /* AddChannelTableViewController.swift in Sources */,
 				EC8ECEE826FBE0C600CE0B36 /* FirebaseTypingListener.swift in Sources */,
 				EC8ECFD726FEA36200CE0B36 /* VideoMessage.swift in Sources */,
 				ECA0F06526EECC9D0011B1D4 /* Extensions.swift in Sources */,
 				ECA0F03B26EA7ED20011B1D4 /* EditProfileTableViewController.swift in Sources */,
+				EC8ECFFF27004A2900CE0B36 /* LocationMessage.swift in Sources */,
+				EC8ED00527005B1100CE0B36 /* MapAnnotation.swift in Sources */,
 				ECA0F06E26F06DE50011B1D4 /* StatusTableViewController.swift in Sources */,
 				ECA0F06826F010C10011B1D4 /* Status.swift in Sources */,
 				EC8ECE8226FAAA1500CE0B36 /* IncomingMessage.swift in Sources */,
+				EC8ED09B2702CACE00CE0B36 /* Channel.swift in Sources */,
 				EC8ECD6E26F5500400CE0B36 /* ChatViewController.swift in Sources */,
 				EC46B0E426DD621A00560EBD /* AppDelegate.swift in Sources */,
 				EC8ECD7926F9060A00CE0B36 /* MessageDisplayDelegate.swift in Sources */,
 				EC8ECD7126F9058C00CE0B36 /* MessageDataSource.swift in Sources */,
 				EC8ECD6B26F51CE600CE0B36 /* ChatsTableViewController.swift in Sources */,
 				EC8ECE5E26FA99EA00CE0B36 /* FirebaseMessageListener.swift in Sources */,
+				EC8ED0022700525800CE0B36 /* MapViewController.swift in Sources */,
 				EC8ECE1426F9378F00CE0B36 /* RealmManager.swift in Sources */,
+				EC8ED0CC27039E6100CE0B36 /* ChannelsTableViewController.swift in Sources */,
 				EC8ECD7C26F9062200CE0B36 /* MessageLayoutDelegate.swift in Sources */,
+				EC8ED0D22703B08C00CE0B36 /* MyChannelsTableViewController.swift in Sources */,
 				ECA0F0B026F31A420011B1D4 /* StartChat.swift in Sources */,
 				ECA0EFCF26DFED280011B1D4 /* FirebaseUserListener.swift in Sources */,
 				EC46B0E626DD621A00560EBD /* SceneDelegate.swift in Sources */,
+				EC8ED04D2702746300CE0B36 /* AudioMessage.swift in Sources */,
 				ECA0F0AD26F2C05E0011B1D4 /* RecentTableViewCell.swift in Sources */,
 				EC8ECD8526F9146C00CE0B36 /* MKMessage.swift in Sources */,
 				EC8ECFFC26FEF08D00CE0B36 /* LocationManager.swift in Sources */,

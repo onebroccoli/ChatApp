@@ -42,7 +42,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if !firstRun! {
             // first time run the app
             print("check first run!!!!")
-            let status = Status.array.map { $0.rawValue }
+//            let status = Status.array.map { $0.rawValue }
+            let status = Status.allCases.map{ $0.rawValue}
             userDefaults.set(status,forKey: kSTATUS)
             userDefaults.set(true, forKey: kFIRSTRUN)
         }

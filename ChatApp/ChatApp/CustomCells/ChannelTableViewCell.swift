@@ -38,6 +38,7 @@ class ChannelTableViewCell: UITableViewCell {
         memberCountLabel.text = "\(channel.memberIds.count) members"
         lastMessageDateLabel.text = timeElapsed(channel.lastMessageDate ?? Date())
         lastMessageDateLabel.adjustsFontSizeToFitWidth = true
+        setAvatar(avatarLink: channel.avatarLink)
         
     }
     
