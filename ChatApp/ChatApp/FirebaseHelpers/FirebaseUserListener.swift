@@ -38,12 +38,12 @@ class FirebaseUserListener {
             
             if error == nil {
                 
-                //send verification
+                //send verification email
                 authDataResult!.user.sendEmailVerification { (error) in
                     print("auth email sent with error", error?.localizedDescription)
                 }
                 
-                // create user authetification
+                // create user and save it
                 if authDataResult?.user != nil {
                     
                     let user = User(id: authDataResult!.user.uid, username: email, email: email, pushId: "", avatarLink: "", status: "Hey there I'm using Messager")

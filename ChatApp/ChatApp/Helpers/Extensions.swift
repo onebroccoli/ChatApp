@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+//add circle image
 extension UIImage {
     
     var isPortrait: Bool { return size.height > size.width }

@@ -7,11 +7,13 @@
 
 import Foundation
 import FirebaseFirestore
+
 enum FCollectionReference: String {
     case User
     case Recent
     case Messages
     case Typing
+    case Channel
 }
 
 

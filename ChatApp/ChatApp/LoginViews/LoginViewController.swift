@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import ProgressHUD
+import RealmSwift
 
 class LoginViewController: UIViewController {
 
@@ -45,7 +46,7 @@ class LoginViewController: UIViewController {
     
     
     // MARK: - Vars
-    var isLogin = true
+    var isLogin: Bool = true //start project is true
     
     
     
@@ -94,7 +95,7 @@ class LoginViewController: UIViewController {
     }
     @IBAction func signUpButtonPressed(_ sender: UIButton) {
         updateUIfor(login: sender.titleLabel?.text == "Login")
-        isLogin.toggle()
+        isLogin.toggle() //切换bool value Toggles the Boolean variable’s value.
     }
     
     // MARK: - Setup
@@ -122,21 +123,23 @@ class LoginViewController: UIViewController {
     
     @objc func backgroundTap() {
 //        print ("background tap")
-        view.endEditing(false)
+        view.endEditing(false) //disable the keyboard for anny view
     }
     
     
     // MARK: - Animation
     
     private func updateUIfor(login: Bool) {
+        loginButtonOutlet.setImage(UIImage(named: login ? "loginBtn" : "registerBtn"), for: .normal)
         
-        loginButtonOutlet.setTitle(login ? "Login" : "Register", for: .normal);
+        signUpButtonOutlet.setTitle(login ? "Login" : "Register", for: .normal);
 //
         
-        signUpButtonOutlet.setTitle(login ? "Signup" : "Login", for: .normal)
-        
+//        signUpButtonOutlet.setTitle(login ? "Signup" : "Login", for: .normal)
+//
         signUpLabel.text = login ? "Don't have an account?" : "Have an account?"
         
+        //update for UI
         UIView.animate(withDuration: 0.5) {
             self.repeatPasswordTextField.isHidden = login
             self.repeatPasswordLabel.isHidden = login
@@ -181,6 +184,7 @@ class LoginViewController: UIViewController {
             if error == nil {
                 if isEmailVerified {
                     self.goToApp()
+//                    print(" user has logged in", User.currentUser?.email)
                 } else {
                     ProgressHUD.showFailed("Please verify email.")
                     self.resendEmailButtonOutlet.isHidden = false
@@ -206,11 +210,8 @@ class LoginViewController: UIViewController {
                 }
             }
         } else {
-            
             ProgressHUD.showFailed("The passwords dont match")
         }
-        
-        
     }
     
     //

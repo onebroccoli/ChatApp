@@ -10,7 +10,8 @@ import FirebaseStorage
 
 import ProgressHUD
 
-let storage = Storage.storage()
+let storage = Storage.storage() //storage is a constance
+
 
 class FileStorage {
     
@@ -20,7 +21,9 @@ class FileStorage {
         
         let storageRef = storage.reference(forURL: kFILEREFERENCE).child(directory)
         
-        let imageData = image.jpegData(compressionQuality: 0.6)
+        //convert data
+        let imageData = image.jpegData(compressionQuality: 0.6) //keep 60%quality
+        
         var task: StorageUploadTask!
         
         task = storageRef.putData(imageData!, metadata: nil, completion: { (metadata, error) in
