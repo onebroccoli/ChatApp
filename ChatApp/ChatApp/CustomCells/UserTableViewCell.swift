@@ -24,6 +24,7 @@ class UserTableViewCell: UITableViewCell {
 
     }
     
+    //download all the user info:
     func configureC(user: User) {
         usernameLabel.text = user.username
         statusLabel.text = user.status
