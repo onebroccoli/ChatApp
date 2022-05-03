@@ -24,7 +24,7 @@ class EditProfileTableViewController: UITableViewController {
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.tableFooterView = UIView()
+        tableView.tableFooterView = UIView() //get rid of empty cells
         configureTextField()
         
     }
@@ -66,7 +66,7 @@ class EditProfileTableViewController: UITableViewController {
             if user.avatarLink != "" {
                 // set avatar
                 FileStorage.downloadImage(imageUrl: user.avatarLink) { (avatarImage) in
-                    self.avatarImageView.image = avatarImage?.circleMasked
+                    self.avatarImageView.image = avatarImage?.circleMasked //extension 写的function
                 }
                 
             }
@@ -83,11 +83,11 @@ class EditProfileTableViewController: UITableViewController {
     
     // MARK: - Gallery
     private func showImageGallery() {
-        self.gallery = GalleryController()
+        self.gallery = GalleryController() //initialized
         self.gallery.delegate = self
         
-        Config.tabsToShow = [.imageTab, .cameraTab]
-        Config.Camera.imageLimit = 1
+        Config.tabsToShow = [.imageTab, .cameraTab] //want to show only photo or camera
+        Config.Camera.imageLimit = 1 //only choose 1 image
         Config.initialTab = .imageTab
         
         self.present(gallery, animated: true, completion: nil)
@@ -159,6 +159,7 @@ extension EditProfileTableViewController : GalleryControllerDelegate {
                 
             }
         }
+        //remmeber to dismiss, so after select photo, page will be done and disappear
         controller.dismiss(animated: true, completion: nil)
 
         
