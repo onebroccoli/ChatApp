@@ -25,6 +25,7 @@ class ProfileTableViewController: UITableViewController {
         setupUI()
     }
     //MARK: - Tableview Delegates
+    //remove headerviews
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = UIView()
         headerView.backgroundColor = UIColor(named: "tableviewBackgroundColor")
