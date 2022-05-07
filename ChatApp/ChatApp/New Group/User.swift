@@ -9,6 +9,7 @@ import Foundation
 import Firebase
 import FirebaseFirestoreSwift
 
+//have two protocols, one codable, one equatable
 struct User: Codable, Equatable { //coadble is encoding and decoding
     
     var id = ""
@@ -36,9 +37,9 @@ struct User: Codable, Equatable { //coadble is encoding and decoding
                 }
             }
         }
-        return nil
+        return nil //no user
     }
-    
+    //equitable
     static func == (lhs: User, rhs: User) -> Bool {
         lhs.id == rhs.id
     }
