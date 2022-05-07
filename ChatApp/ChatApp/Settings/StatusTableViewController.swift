@@ -14,7 +14,7 @@ class StatusTableViewController: UITableViewController {
     // MARK: - ViewLifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.tableFooterView = UIView()
+        tableView.tableFooterView = UIView() //get rid off cells
         loadUserStatus()
 
     }
