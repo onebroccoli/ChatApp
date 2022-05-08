@@ -43,14 +43,14 @@ class RecentTableViewCell: UITableViewCell {
         
         if recent.unreadCounter != 0 {
             self.unreadCounterLabel.text = "\(recent.unreadCounter)"
-            self.unreadCounterBackgroundView.isHidden = false
+            self.unreadCounterBackgroundView.isHidden = false //show the circle to show the unread msg count
         } else {
-            self.unreadCounterBackgroundView.isHidden = true
+            self.unreadCounterBackgroundView.isHidden = true //hide the circle
         }
         
         
         setAvatar(avatarLink: recent.avatarLink)
-        dateLabel.text = timeElapsed(recent.date ?? Date())
+        dateLabel.text = timeElapsed(recent.date ?? Date()) //globalFunction
         dateLabel.adjustsFontSizeToFitWidth = true
         
     }
