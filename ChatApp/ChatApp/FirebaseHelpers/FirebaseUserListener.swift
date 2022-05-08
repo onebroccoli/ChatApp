@@ -160,6 +160,8 @@ class FirebaseUserListener {
                 }
                 let user = try? document.data(as: User.self)
                 usersArray.append(user!)
+                count += 1
+                
                 if count == withIds.count {
                     completion(usersArray) //return specified user id                }
                     
