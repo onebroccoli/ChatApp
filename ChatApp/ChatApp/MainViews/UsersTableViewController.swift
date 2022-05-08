@@ -13,6 +13,7 @@ class UsersTableViewController: UITableViewController {
     var allUsers: [User] = []
     var filteredUsers: [User] = [] //used for searching user
     
+    //search Controller
     let searchController = UISearchController(searchResultsController: nil)
     
     
@@ -24,7 +25,7 @@ class UsersTableViewController: UITableViewController {
         tableView.tableFooterView = UIView() //get rid of the bottom empty lines
 //        createDummyUsers() //只跑一遍
         
-        setupSearchController()
+        setupSearchController() //search users
         downloadUsers()
         
 
@@ -67,6 +68,8 @@ class UsersTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        //show profile view
         let user = searchController.isActive ? filteredUsers[indexPath.row] : allUsers[indexPath.row]
         showUserProfile(user)
     }
@@ -109,6 +112,7 @@ class UsersTableViewController: UITableViewController {
     }
     
     //MARK: -Navigation
+    //when click, will show user profile page
     private func showUserProfile(_ user: User) {
         let profileView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ProfileView") as! ProfileTableViewController
         profileView.user = user
