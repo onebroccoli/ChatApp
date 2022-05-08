@@ -9,7 +9,7 @@ import Foundation
 import Firebase
 
 // MARK: - StartChat
-func startChat(user1: User, user2: User) -> String {
+func startChat(user1: User, user2: User) -> String { //chatRoomId
     //create chat id so the conversation between users are unique
     let chatRoomId = chatRoomIdFrom(user1Id: user1.id, user2Id: user2.id)
     createRecentItems(chatRoomId: chatRoomId, users: [user1, user2])
@@ -26,7 +26,7 @@ func restartChat(chatRoomId: String, memberIds: [String]) {
 
 
 
-func createRecentItems(chatRoomId: String, users: [User]) {
+func createRecentItems(chatRoomId: String, users: [User]) { //create chatId in firebase
     var memberIdsToCreateRecent = [users.first!.id, users.last!.id]
     print("members to create recent is", memberIdsToCreateRecent)
     
@@ -44,13 +44,17 @@ func createRecentItems(chatRoomId: String, users: [User]) {
         for userId in memberIdsToCreateRecent {
             print("creating recent for user with id ", userId)
             let senderUser = userId == User.currentId ? User.currentUser! : getReceiverFrom(users: users) // current sender is ourself
-            let receiverUser = userId == User.currentId ? getReceiverFrom(users: users) : User.currentUser!
+            let receiverUser = userId == User.currentId ? getReceiverFrom(users: users) : User.currentUser! //receiverUser is opposite of senderUser
+            
             let recentObject = RecentChat(id: UUID().uuidString, chatRoomId: chatRoomId, senderId: senderUser.id, senderName: senderUser.username, receiverId: receiverUser.id, receiverName: receiverUser.username, date: Date(), memberIds: [senderUser.id, receiverUser.id], lastMessage: "", unreadCounter: 0, avatarLink: receiverUser.avatarLink)
-            FirebaseRecentListener.shared.saveRecent(recentObject)
+            
+            FirebaseRecentListener.shared.saveRecent(recentObject) //first create FirebaseRecentListener class
         }
     }
     
 }
+
+
 func removeMemberWhoHasRecent(snapshot: QuerySnapshot, memberIds: [String]) -> [String] {
     var memberIdsToCreateRecent = memberIds
     for recentData in snapshot.documents {
