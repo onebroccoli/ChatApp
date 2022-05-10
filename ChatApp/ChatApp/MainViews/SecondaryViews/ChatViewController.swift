@@ -140,6 +140,7 @@ class ChatViewController: MessagesViewController {
     
     private func configureMessageInputBar() {
         messageInputBar.delegate = self
+        //attach button left side
         let attachButton = InputBarButtonItem()
         attachButton.image = UIImage(systemName: "plus", withConfiguration: UIImage.SymbolConfiguration(pointSize: 30))
         attachButton.setSize(CGSize(width: 30, height: 30), animated: false)
@@ -150,13 +151,14 @@ class ChatViewController: MessagesViewController {
             
         }
         
+        //mic button
         micButton.image = UIImage(systemName: "mic.fill",  withConfiguration: UIImage.SymbolConfiguration(pointSize: 30))
         micButton.setSize(CGSize(width: 30, height: 30), animated: false)
         
         //add gesture recognizer
         micButton.addGestureRecognizer(longPressGesture)
         
-        
+        //let attachbutton be at the left side
         messageInputBar.setStackViewItems([attachButton], forStack: .left, animated: false)
         messageInputBar.setLeftStackViewWidthConstant(to: 36, animated: false)
         
