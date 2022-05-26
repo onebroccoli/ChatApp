@@ -29,6 +29,7 @@ extension ChatViewController : MessagesLayoutDelegate {
         return indexPath.section != mkMessages.count - 1 ? 10 : 0
     }
     
+    //show sender initial in the chat
     func configureAvatarView(_ avatarView: AvatarView, for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) {
         avatarView.set(avatar: Avatar(initials: mkMessages[indexPath.section].senderInitials))
     }
