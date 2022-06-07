@@ -37,7 +37,7 @@ class IncomingMessage {
             
             FileStorage.downloadImage(imageUrl: localMessage.pictureUrl) { (thumbNail) in
                 FileStorage.downloadVideo(videoLink: localMessage.videoUrl) {(readyToPlay, fileName) in
-                    
+                    //present
                     let videoURL = URL(fileURLWithPath: fileInDocumentsDirectory(fileName: fileName))
                     
                     let videoItem = VideoMessage(url: videoURL)
