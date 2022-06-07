@@ -32,7 +32,7 @@ class MapViewController: UIViewController {
             mapView.setCenter(location!.coordinate, animated: false)
             //add annotation
 //            mapView.addAnnotation(MapAnnotation(title: "user location", coordinate: location!.coordinate))
-            mapView.addAnnotation(MapAnnotation(title: nil, coordinate: location!.coordinate))
+            mapView.addAnnotation(MapAnnotation(title: nil, coordinate: location!.coordinate)) // title can be " user location" 
 
             
         }
@@ -41,7 +41,8 @@ class MapViewController: UIViewController {
     
     private func configureLeftBarButton() {
         //create navigation bar
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "chevron.left"), style: .plain, target: self, action: #selector(self.backButtonPressed))
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "chevron.left"), style: .plain, target: self, action: #selector(self.backButtonPressed)) // in action section
+        
         
     }
     
