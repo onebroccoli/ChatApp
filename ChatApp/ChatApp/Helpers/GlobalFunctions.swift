@@ -47,6 +47,7 @@ func timeElapsed(_ date: Date) -> String {
     return elapsed
 }
 
+//give video a thumbnail image
 func videoThumbnail(video: URL) -> UIImage {
     let asset = AVURLAsset(url: video, options: nil)
     let imageGenerator = AVAssetImageGenerator(asset:  asset)
