@@ -329,7 +329,7 @@ class ChatViewController: MessagesViewController {
     }
     
     private func actionAttachMessage() {
-        //hide keyboard
+        //hide keyboard,show the action only
         messageInputBar.inputTextView.resignFirstResponder()
         let optionMenu = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         let takePhotoOrVideo = UIAlertAction(title: "Camera", style: .default) { (alert) in
@@ -355,12 +355,13 @@ class ChatViewController: MessagesViewController {
         shareMedia.setValue(UIImage(systemName: "photo.fill"), forKey: "image")
         shareLocation.setValue(UIImage(systemName: "mappin.and.ellipse"), forKey: "image")
 
-        
+        //add option menu
         optionMenu.addAction(takePhotoOrVideo)
         optionMenu.addAction(shareMedia)
         optionMenu.addAction(shareLocation)
         optionMenu.addAction(cancelAction)
-            
+           
+        //in order to show option menu , need to present it
         self.present(optionMenu, animated: true, completion: nil)
 
         
@@ -447,7 +448,7 @@ class ChatViewController: MessagesViewController {
     private func showImageGallery(camera: Bool) {
         gallery = GalleryController()
         gallery.delegate = self
-        Config.tabsToShow = camera ? [.cameraTab] : [.imageTab, .videoTab]
+        Config.tabsToShow = camera ? [.cameraTab] : [.imageTab, .videoTab] //if camera true only camera, if false show image and video tab
         Config.Camera.imageLimit = 1
         Config.initialTab = .imageTab
         Config.VideoEditor.maximumDuration = 30 //no more than 30seconds
@@ -460,6 +461,8 @@ class ChatViewController: MessagesViewController {
     
     //MARK: - AudioMessages
     @objc func recordAudio() {
+        //check when the touch begin and end
+        //when finger leaves the audio button, send the file
         switch longPressGesture.state {
         case .began:
             audioDuration = Date()
@@ -498,7 +501,7 @@ extension ChatViewController : GalleryControllerDelegate {
             }
             
         }
-        controller.dismiss(animated: true, completion: nil)
+        controller.dismiss(animated: true, completion: nil) //when click is selected for cancel
 
     }
     
